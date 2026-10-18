@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -25,8 +23,18 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# local env files — ALL of them
+.env
+.env.local
 .env*.local
+.env.development
+.env.production
+
+# database files
+*.db
+*.db-journal
+prisma/dev.db
+prisma/*.db
 
 # vercel
 .vercel
